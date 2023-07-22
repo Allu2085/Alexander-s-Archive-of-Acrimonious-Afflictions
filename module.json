@@ -1,0 +1,55 @@
+{
+    "id": "aaaa",
+    "name": "aaaa",
+    "title": "Alexander's Archive of Acrimonious Afflictions",
+    "description": "A Conversion of Maxwell's Manual of Malicious Maladies for PF2e.",
+    "version": "0.9.5",
+    "authors": [
+        {
+            "name": "Allu2085"
+        }
+    ],
+    "scripts": [
+        "scripts/main.js",
+        "scripts/config.js",
+        "scripts/module.js"
+    ],
+    "styles": [
+        "styles/module.css"
+    ],
+    "packs": [
+        {
+            "name": "aaaa",
+            "label": "Alexander's Archive of Acrimonious Afflictions",
+            "path": "./packs/roll-tables.db",
+            "type": "RollTable",
+	    "private": false
+        },
+	{
+            "name": "aaaai",
+            "label": "Alexander's Archive of Acrimonious Afflictions Items",
+            "path": "./packs/effects.db",
+            "type": "Item",
+	    "private": false,
+	    "system": "pf2e"
+        }
+    ],
+    "manifest": "https://gitlab.com/encounterlibrary/alexanders-archive-of-acrimonious-afflictions/-/raw/main/module.json",
+    "download": "https://gitlab.com/encounterlibrary/alexanders-archive-of-acrimonious-afflictions/-/raw/main/my-content-module.zip",
+    "socket": true,
+    "relationships": {
+        "requires": [
+            {
+                "id": "socketlib",
+                "type": "module",
+                "compatibility": {}
+            }
+        ]
+    },
+    "compatibility": {
+        "minimum": "10",
+        "verified": "10"
+    },
+    "name": "aaaa",
+    "minimumCoreVersion": "10"
+}
